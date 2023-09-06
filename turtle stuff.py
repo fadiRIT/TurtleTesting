@@ -18,8 +18,9 @@ def testdrive():
 
     t.delay(60)
     t.up()
-    
+
     t.down()
+    t.circle(80)
     t.goto(50,50)
     t.home()
 
