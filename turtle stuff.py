@@ -16,13 +16,12 @@ def testdrive():
     t.left(87)
     t.setheading(127)
 
-    t.delay(60)
+    t.delay(60) #optional
     t.up()
-
     t.down()
-    t.circle(80)
     t.goto(50,50)
     t.home()
+    t.circle(25)
 
 testdrive()
 
