@@ -34,8 +34,21 @@ def turtle_state():
     ycor = t.ycor()
     print("Pen Status :",updown,"\nHeading :",heading, "\nThe coordinates are\nX:",xcor,"\nY:",ycor)
 
+def square():
+    t.up()
+    t.goto(100,100)
+    t.down()
+    t.forward(90)
+    t.left(90)
+    t.forward(90)
+    t.left(90)
+    t.forward(90)
+    t.left(90)
+    t.forward(90)
+
 def main():
     testdrive()
+    square()
     turtle_state()
     input("Press enter to continue . . .")
 
