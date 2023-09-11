@@ -16,12 +16,17 @@ def testdrive():
     t.left(87)
     t.setheading(127)
 
-    t.delay(60) #optional
+    t.delay(60)
     t.up()
+    
     t.down()
     t.goto(50,50)
     t.home()
     t.circle(25)
 
-testdrive()
+def main():
+    testdrive()
+    input("Press enter to continue . . .")
+
+main()
 
