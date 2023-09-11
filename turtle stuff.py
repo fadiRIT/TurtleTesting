@@ -5,7 +5,10 @@
 # Home to move to the origin, which is 0,0 by default. turtle.home()
 # setheading can be used to rotate the turtle to a specific angle. turtle.setheading(180)
 # a circle to tell the turtle to draw a circle to its left, not your left.
-
+# turtle_state prints the current state of the turtle.
+# turtle.isdown() prints true if pen is down, and false if its up
+# turtle.heading( returns the current angle of orientatio nof the turtle
+# turtle.xcor(), turtle.ycor() return x and y coordinates of the turtle
 
 
 
@@ -16,7 +19,7 @@ def testdrive():
     t.left(87)
     t.setheading(127)
 
-    t.delay(60)
+    t.delay(20)
     t.up()
     
     t.down()
@@ -24,8 +27,16 @@ def testdrive():
     t.home()
     t.circle(25)
 
+def turtle_state():
+    updown = t.isdown()
+    heading = t.heading()
+    xcor = t.xcor()
+    ycor = t.ycor()
+    print("Pen Status :",updown,"\nHeading :",heading, "\nThe coordinates are\nX:",xcor,"\nY:",ycor)
+
 def main():
     testdrive()
+    turtle_state()
     input("Press enter to continue . . .")
 
 main()
